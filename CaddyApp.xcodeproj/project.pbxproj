@@ -15,6 +15,9 @@
 		A1B57CA51E668AD000F484E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B57CA31E668AD000F484E6 /* LaunchScreen.storyboard */; };
 		A1B57CB01E668AD000F484E6 /* CaddyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B57CAF1E668AD000F484E6 /* CaddyAppTests.swift */; };
 		A1B57CBB1E668AD000F484E6 /* CaddyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B57CBA1E668AD000F484E6 /* CaddyAppUITests.swift */; };
+		A1B57CC91E668BD400F484E6 /* Temp Caddy - Golf Course.csv in Resources */ = {isa = PBXBuildFile; fileRef = A1B57CC81E668BD400F484E6 /* Temp Caddy - Golf Course.csv */; };
+		A1B57CCB1E668BFA00F484E6 /* Temp Caddy - Caddies.csv in Resources */ = {isa = PBXBuildFile; fileRef = A1B57CCA1E668BFA00F484E6 /* Temp Caddy - Caddies.csv */; };
+		A1B57CCD1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv in Resources */ = {isa = PBXBuildFile; fileRef = A1B57CCC1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		A1B57CB61E668AD000F484E6 /* CaddyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaddyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B57CBA1E668AD000F484E6 /* CaddyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaddyAppUITests.swift; sourceTree = "<group>"; };
 		A1B57CBC1E668AD000F484E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B57CC81E668BD400F484E6 /* Temp Caddy - Golf Course.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Temp Caddy - Golf Course.csv"; sourceTree = "<group>"; };
+		A1B57CCA1E668BFA00F484E6 /* Temp Caddy - Caddies.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Temp Caddy - Caddies.csv"; sourceTree = "<group>"; };
+		A1B57CCC1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Temp Caddy - Caddie Masters.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				A1B57C9C1E668AD000F484E6 /* SecondViewController.swift */,
 				A1B57C9E1E668AD000F484E6 /* Main.storyboard */,
 				A1B57CA11E668AD000F484E6 /* Assets.xcassets */,
+				A1B57CC81E668BD400F484E6 /* Temp Caddy - Golf Course.csv */,
+				A1B57CCA1E668BFA00F484E6 /* Temp Caddy - Caddies.csv */,
+				A1B57CCC1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv */,
 				A1B57CA31E668AD000F484E6 /* LaunchScreen.storyboard */,
 				A1B57CA61E668AD000F484E6 /* Info.plist */,
 			);
@@ -235,6 +244,9 @@
 				A1B57CA51E668AD000F484E6 /* LaunchScreen.storyboard in Resources */,
 				A1B57CA21E668AD000F484E6 /* Assets.xcassets in Resources */,
 				A1B57CA01E668AD000F484E6 /* Main.storyboard in Resources */,
+				A1B57CC91E668BD400F484E6 /* Temp Caddy - Golf Course.csv in Resources */,
+				A1B57CCD1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv in Resources */,
+				A1B57CCB1E668BFA00F484E6 /* Temp Caddy - Caddies.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
