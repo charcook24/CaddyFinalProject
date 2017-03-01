@@ -1,2 +1,0 @@
-# CaddyApp
-Help this project
