@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Upcoming -->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="CaddyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,13 +48,13 @@
                             <constraint firstItem="1kC-GT-cPM" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="ihm-ra-l4M"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Upcoming " image="Numbered List Filled-50" selectedImage="Numbered List Filled-50" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--Unassigned -->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="CaddyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-qr-Ojb">
                                 <rect key="frame" x="244" y="498" width="113" height="38"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="0.669921875" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="113" id="TDH-rU-NBP"/>
                                     <constraint firstAttribute="height" constant="38" id="WYl-Fs-J82"/>
@@ -110,7 +110,7 @@
                             <constraint firstItem="bMs-qr-Ojb" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="ygP-em-myh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Unassigned " image="Bulleted List-50" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,7 +222,7 @@
                             <constraint firstItem="i6I-qA-4zb" firstAttribute="top" secondItem="cYg-j4-fsp" secondAttribute="bottom" constant="45" id="yR8-YE-Y5h"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Third" image="first" id="epg-an-RaZ"/>
+                    <tabBarItem key="tabBarItem" title="Performance" image="Ratings-50" id="epg-an-RaZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pwx-5A-gAz" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,8 +230,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bulleted List-50" width="29" height="29"/>
         <image name="CaddyShack" width="449" height="139"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Numbered List Filled-50" width="29" height="29"/>
+        <image name="Ratings-50" width="29" height="29"/>
     </resources>
 </document>
