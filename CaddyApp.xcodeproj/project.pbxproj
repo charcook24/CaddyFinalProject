@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D495AB856D36AB231127810 /* Pods_CaddyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9EA7277C2D79EDAD675504 /* Pods_CaddyApp.framework */; };
+		A136851A1E68A4E60025A94F /* Caddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13685191E68A4E50025A94F /* Caddy.swift */; };
 		A182F8FE1E673E7300BB862A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A182F8FD1E673E7300BB862A /* GoogleService-Info.plist */; };
 		A182F8FF1E673E7300BB862A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A182F8FD1E673E7300BB862A /* GoogleService-Info.plist */; };
 		A182F9001E673E7300BB862A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A182F8FD1E673E7300BB862A /* GoogleService-Info.plist */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		00398F363A73A8F60A614230 /* Pods-CaddyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaddyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaddyApp/Pods-CaddyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		63EF4D4CE0A9699A358D2645 /* Pods-CaddyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaddyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaddyApp/Pods-CaddyApp.release.xcconfig"; sourceTree = "<group>"; };
+		A13685191E68A4E50025A94F /* Caddy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caddy.swift; sourceTree = "<group>"; };
 		A182F8FD1E673E7300BB862A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1B57C951E668AD000F484E6 /* CaddyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaddyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B57C981E668AD000F484E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A13685181E68A4AA0025A94F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A13685191E68A4E50025A94F /* Caddy.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A1B57C8C1E668AD000F484E6 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		A1B57C971E668AD000F484E6 /* CaddyApp */ = {
 			isa = PBXGroup;
 			children = (
+				A13685181E68A4AA0025A94F /* Model */,
 				A1B57C981E668AD000F484E6 /* AppDelegate.swift */,
 				A1B57C9A1E668AD000F484E6 /* FirstViewController.swift */,
 				A1B57C9C1E668AD000F484E6 /* SecondViewController.swift */,
@@ -360,6 +371,7 @@
 				A1B57C9D1E668AD000F484E6 /* SecondViewController.swift in Sources */,
 				A1B57C991E668AD000F484E6 /* AppDelegate.swift in Sources */,
 				A1B57CCF1E66930E00F484E6 /* ThirdViewController.swift in Sources */,
+				A136851A1E68A4E60025A94F /* Caddy.swift in Sources */,
 				A1B57C9B1E668AD000F484E6 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
