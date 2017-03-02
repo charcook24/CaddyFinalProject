@@ -31,7 +31,7 @@
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Upcoming List:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnn-5a-U7a">
                                 <rect key="frame" x="46" y="61" width="118" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -80,6 +80,10 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-qr-Ojb">
                                 <rect key="frame" x="244" y="498" width="113" height="38"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="TDH-rU-NBP"/>
+                                    <constraint firstAttribute="height" constant="38" id="WYl-Fs-J82"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="Check-In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -87,7 +91,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Unassigned List:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FC-4l-Zg7">
                                 <rect key="frame" x="46" y="59" width="130" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -96,13 +100,13 @@
                         <constraints>
                             <constraint firstItem="sb7-7O-gWk" firstAttribute="top" secondItem="Ap6-ba-UeO" secondAttribute="bottom" constant="28" id="3YK-E1-csh"/>
                             <constraint firstItem="Ap6-ba-UeO" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="4Ta-fE-5jb"/>
-                            <constraint firstItem="bMs-qr-Ojb" firstAttribute="top" secondItem="sb7-7O-gWk" secondAttribute="bottom" constant="15" id="7HM-8t-EB6"/>
                             <constraint firstItem="sb7-7O-gWk" firstAttribute="top" secondItem="8FC-4l-Zg7" secondAttribute="bottom" constant="5" id="Dzs-tJ-ylr"/>
                             <constraint firstItem="sb7-7O-gWk" firstAttribute="leading" secondItem="8FC-4l-Zg7" secondAttribute="leading" id="Iox-Ei-lvb"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="sb7-7O-gWk" secondAttribute="bottom" constant="60" id="bBo-uE-XsM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sb7-7O-gWk" secondAttribute="trailing" constant="26" id="dz8-1M-ULA"/>
                             <constraint firstItem="Ap6-ba-UeO" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="25" id="hVn-II-4ps"/>
                             <constraint firstItem="sb7-7O-gWk" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="26" id="ibT-PB-k5H"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="bMs-qr-Ojb" secondAttribute="bottom" constant="10" id="l0I-5N-1h1"/>
                             <constraint firstItem="bMs-qr-Ojb" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="ygP-em-myh"/>
                         </constraints>
                     </view>
@@ -158,6 +162,7 @@
                                     <constraint firstAttribute="height" constant="51" id="0pe-c7-aRF"/>
                                     <constraint firstAttribute="width" constant="174" id="l6b-iB-oei"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Payment History">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
@@ -169,6 +174,7 @@
                                     <constraint firstAttribute="height" constant="51" id="S5s-aH-xct"/>
                                     <constraint firstAttribute="width" constant="174" id="liW-K3-FmB"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Account Information">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
@@ -180,6 +186,7 @@
                                     <constraint firstAttribute="width" constant="174" id="Vlk-wr-l6Y"/>
                                     <constraint firstAttribute="height" constant="51" id="mI8-ir-GG8"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Sign Out">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
@@ -191,6 +198,7 @@
                                     <constraint firstAttribute="width" constant="174" id="8y4-5d-RLB"/>
                                     <constraint firstAttribute="height" constant="51" id="uyq-uY-3te"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Performace History">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
