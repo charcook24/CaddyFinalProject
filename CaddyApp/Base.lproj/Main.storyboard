@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7jV-yy-6sX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qgq-fN-DFE">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -117,43 +117,39 @@
             <point key="canvasLocation" x="1016" y="380"/>
         </scene>
         <!--Login View Controller-->
-        <scene sceneID="hw1-y7-slD">
+        <scene sceneID="0L0-XK-I9g">
             <objects>
-                <viewController id="7jV-yy-6sX" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="qgq-fN-DFE" customClass="LoginViewController" customModule="CaddyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eoI-on-bYB"/>
-                        <viewControllerLayoutGuide type="bottom" id="9Qc-SE-yFa"/>
+                        <viewControllerLayoutGuide type="top" id="UnL-YF-mL0"/>
+                        <viewControllerLayoutGuide type="bottom" id="VYB-Tl-kmA"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Y6y-aK-Rxb" customClass="Login">
+                    <view key="view" contentMode="scaleToFill" id="Faj-tJ-s4b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycV-Kf-utk">
-                                <rect key="frame" x="206" y="505" width="189" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqs-NJ-7ow">
+                                <rect key="frame" x="189" y="244" width="223" height="111"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="ImE-xY-NDV"/>
-                                    <constraint firstAttribute="width" constant="189" id="MI7-Pt-9Dy"/>
-                                </constraints>
-                                <state key="normal" title="Create Account">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didCreateAccount:" destination="7jV-yy-6sX" eventType="touchUpInside" id="aKw-cm-BiL"/>
-                                    <segue destination="49e-Tb-3d3" kind="showDetail" id="Gbi-vr-f0r"/>
+                                    <segue destination="49e-Tb-3d3" kind="showDetail" id="dkh-40-vb8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.43653681509999998" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ycV-Kf-utk" firstAttribute="centerX" secondItem="Y6y-aK-Rxb" secondAttribute="centerX" id="JMs-6H-FVm"/>
-                            <constraint firstItem="9Qc-SE-yFa" firstAttribute="top" secondItem="ycV-Kf-utk" secondAttribute="bottom" constant="35" id="yvD-MB-6OZ"/>
+                            <constraint firstItem="yqs-NJ-7ow" firstAttribute="centerX" secondItem="Faj-tJ-s4b" secondAttribute="centerX" id="C2e-PT-crF"/>
+                            <constraint firstItem="yqs-NJ-7ow" firstAttribute="centerY" secondItem="Faj-tJ-s4b" secondAttribute="centerY" id="vWl-U5-cuZ"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qoa-mn-3QG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ovx-bn-FF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732" y="-25"/>
+            <point key="canvasLocation" x="-700" y="25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
