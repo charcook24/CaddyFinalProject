@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7jV-yy-6sX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -32,11 +32,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Upcoming List:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnn-5a-U7a">
                                 <rect key="frame" x="46" y="61" width="118" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.70440924657534243" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.43653681509999998" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="sCB-EM-ma0" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="26" id="3R3-fI-u9e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sCB-EM-ma0" secondAttribute="trailing" constant="26" id="4Ra-o3-nVO"/>
@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="817" y="-342"/>
         </scene>
         <!--Unassigned -->
         <scene sceneID="wg7-f3-ORb">
@@ -92,11 +92,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Unassigned List:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FC-4l-Zg7">
                                 <rect key="frame" x="46" y="59" width="130" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.69681078767123283" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.4393461044520548" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="sb7-7O-gWk" firstAttribute="top" secondItem="Ap6-ba-UeO" secondAttribute="bottom" constant="28" id="3YK-E1-csh"/>
                             <constraint firstItem="Ap6-ba-UeO" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="4Ta-fE-5jb"/>
@@ -115,6 +115,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1016" y="380"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="hw1-y7-slD">
+            <objects>
+                <viewController id="7jV-yy-6sX" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eoI-on-bYB"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Qc-SE-yFa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y6y-aK-Rxb" customClass="Login">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycV-Kf-utk">
+                                <rect key="frame" x="206" y="505" width="189" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ImE-xY-NDV"/>
+                                    <constraint firstAttribute="width" constant="189" id="MI7-Pt-9Dy"/>
+                                </constraints>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didCreateAccount:" destination="7jV-yy-6sX" eventType="touchUpInside" id="aKw-cm-BiL"/>
+                                    <segue destination="49e-Tb-3d3" kind="showDetail" id="Gbi-vr-f0r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.43653681509999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ycV-Kf-utk" firstAttribute="centerX" secondItem="Y6y-aK-Rxb" secondAttribute="centerX" id="JMs-6H-FVm"/>
+                            <constraint firstItem="9Qc-SE-yFa" firstAttribute="top" secondItem="ycV-Kf-utk" secondAttribute="bottom" constant="35" id="yvD-MB-6OZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qoa-mn-3QG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732" y="-25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -204,7 +243,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.70042273116438358" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.43653681506849318" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="iMR-j6-XY3" firstAttribute="centerX" secondItem="Srs-9h-xwt" secondAttribute="centerX" id="1Sf-gZ-VcX"/>
                             <constraint firstItem="i6I-qA-4zb" firstAttribute="centerX" secondItem="Srs-9h-xwt" secondAttribute="centerX" id="79H-o4-14T"/>
