@@ -34,7 +34,7 @@
 #import "GPBCodedInputStream.h"
 #import "GPBCodedOutputStream.h"
 #import "GPBDescriptor.h"
-#import "GPBDictionary.h"
+
 #import "GPBExtensionRegistry.h"
 #import "GPBMessage.h"
 #import "GPBRootObject.h"
