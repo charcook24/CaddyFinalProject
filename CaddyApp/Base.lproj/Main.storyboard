@@ -641,6 +641,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUp:" destination="Qeq-dk-6xT" eventType="touchUpInside" id="xjk-yW-Rqy"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIU-k2-1Fz">
                                 <rect key="frame" x="221" y="189" width="158" height="30"/>
@@ -702,6 +705,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="kMc-5w-aa6" secondAttribute="trailing" constant="-23" id="ze6-vq-KWr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clubID" destination="hEf-A5-VFW" id="ufU-ug-rXl"/>
+                        <outlet property="emailField" destination="NIU-k2-1Fz" id="Mxg-I9-wkF"/>
+                        <outlet property="passwordField" destination="7zT-Gb-mPN" id="3VB-Aw-48Q"/>
+                        <outlet property="signUpButton" destination="yWj-Qq-WMF" id="32B-8D-4h8"/>
+                        <outlet property="titleText" destination="tGZ-i1-Zef" id="ahh-Ln-Ww6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTV-9Y-XkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

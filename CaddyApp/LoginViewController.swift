@@ -21,6 +21,13 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        if let user = FIRAuth.auth()?.currentUser
+        {
+            self.emailField.text = user.email
+            
+            
+        }
+    
     }
     
     override func viewWillAppear(animated: Bool) {
