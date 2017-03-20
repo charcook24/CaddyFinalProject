@@ -8,17 +8,50 @@
 
 
 import UIKit
+import FirebaseAuth
 
 
 class LoginViewController: UIViewController {
     
-    //
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func viewWillAppear(animated: Bool) {
+       // handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
+            // ...
+        }
     
+    
+    override func viewWillDisappear(animated: Bool) {
+       // FIRAuth.auth()?.removeStateDidChangeListener(handle!)
+    }
+    
+    @IBAction func loginButtonPressed(sender: UIButton) {
+    if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
+        
+        Data
+   
+    } else {
+        showErrorAlert("Email and Password Required", msg: "Please enter an email and password")
+        }
+    }
+    
+    func showErrorAlert(title: String, msg: String) {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+
+
     
     
 }

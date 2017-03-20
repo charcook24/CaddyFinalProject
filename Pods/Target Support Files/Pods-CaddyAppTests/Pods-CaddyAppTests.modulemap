@@ -1,0 +1,6 @@
+framework module Pods_CaddyAppTests {
+  umbrella header "Pods-CaddyAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

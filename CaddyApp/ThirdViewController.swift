@@ -17,5 +17,18 @@ class ThirdViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    
+    override func viewWillAppear(animated: Bool) {
+       // handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
+            // ...
+        }
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+       // FIRAuth.auth()?.removeStateDidChangeListener(handle!)
+    }
+    
+
+
         
 }

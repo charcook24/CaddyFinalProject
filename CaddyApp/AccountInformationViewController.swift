@@ -16,6 +16,17 @@ class AccountInformationViewController: UIViewController {
     }
     
     
+    override func viewWillAppear(animated: Bool) {
+       // handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
+            // ...
+        }
+
+    override func viewWillDisappear(animated: Bool) {
+       // FIRAuth.auth()?.removeStateDidChangeListener(handle!)
+    }
+    
+
+
 }
 
 
