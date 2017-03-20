@@ -36,7 +36,6 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonPressed(sender: UIButton) {
     if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
         
-        Data
    
     } else {
         showErrorAlert("Email and Password Required", msg: "Please enter an email and password")

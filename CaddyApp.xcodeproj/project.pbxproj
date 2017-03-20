@@ -11,8 +11,8 @@
 		60477916EA558F43A59311CD /* Pods_CaddyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5FDEBED10BBFBB5FC4A57E /* Pods_CaddyAppTests.framework */; };
 		6626A663751205210E266A7E /* Pods_CaddyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF6C4DC0CBD5B4ACD887802 /* Pods_CaddyAppUITests.framework */; };
 		A14EF0E91E6E10D20022C86C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14EF0E81E6E10D20022C86C /* LoginViewController.swift */; };
-		A1AFD42B1E7F12D400C28BC3 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = A1AFD42A1E7F12D300C28BC3 /* GoogleService-Info (1).plist */; };
-		A1AFD42E1E7F5B2000C28BC3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AFD42D1E7F5B2000C28BC3 /* DataService.swift */; };
+		A19341681E806517003A3714 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19341671E806517003A3714 /* SignUpViewController.swift */; };
+		A1AFD42B1E7F12D400C28BC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1AFD42A1E7F12D300C28BC3 /* GoogleService-Info.plist */; };
 		A1B57C991E668AD000F484E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B57C981E668AD000F484E6 /* AppDelegate.swift */; };
 		A1B57C9B1E668AD000F484E6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B57C9A1E668AD000F484E6 /* FirstViewController.swift */; };
 		A1B57C9D1E668AD000F484E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B57C9C1E668AD000F484E6 /* SecondViewController.swift */; };
@@ -56,8 +56,8 @@
 		7AF6C4DC0CBD5B4ACD887802 /* Pods_CaddyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaddyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		899386E28F36E386EB80F6FC /* Pods-CaddyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaddyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaddyApp/Pods-CaddyApp.release.xcconfig"; sourceTree = "<group>"; };
 		A14EF0E81E6E10D20022C86C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A1AFD42A1E7F12D300C28BC3 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
-		A1AFD42D1E7F5B2000C28BC3 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A19341671E806517003A3714 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A1AFD42A1E7F12D300C28BC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1B57C951E668AD000F484E6 /* CaddyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaddyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B57C981E668AD000F484E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B57C9A1E668AD000F484E6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -133,14 +133,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		A1AFD42C1E7F5AB000C28BC3 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A1AFD42D1E7F5B2000C28BC3 /* DataService.swift */,
-			);
-			name = Services;
-			sourceTree = "<group>";
-		};
 		A1B57C8C1E668AD000F484E6 = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +158,6 @@
 		A1B57C971E668AD000F484E6 /* CaddyApp */ = {
 			isa = PBXGroup;
 			children = (
-				A1AFD42C1E7F5AB000C28BC3 /* Services */,
 				A1DDEE461E6F3BF1004B1CC5 /* Views */,
 				A13685181E68A4AA0025A94F /* Model */,
 				A1B57C981E668AD000F484E6 /* AppDelegate.swift */,
@@ -176,7 +167,7 @@
 				A1B57CCA1E668BFA00F484E6 /* Temp Caddy - Caddies.csv */,
 				A1B57CCC1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv */,
 				A1B57CA31E668AD000F484E6 /* LaunchScreen.storyboard */,
-				A1AFD42A1E7F12D300C28BC3 /* GoogleService-Info (1).plist */,
+				A1AFD42A1E7F12D300C28BC3 /* GoogleService-Info.plist */,
 				A1B57CA61E668AD000F484E6 /* Info.plist */,
 			);
 			path = CaddyApp;
@@ -211,6 +202,7 @@
 				A1DDEE491E6F3CAF004B1CC5 /* PerformanceHistoryViewController.swift */,
 				A1DDEE4B1E6F3D1B004B1CC5 /* AccountInformationViewController.swift */,
 				A1DDEE4D1E6F3DE8004B1CC5 /* SignOutViewController.swift */,
+				A19341671E806517003A3714 /* SignUpViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -345,7 +337,7 @@
 				A1B57CC91E668BD400F484E6 /* Temp Caddy - Golf Course.csv in Resources */,
 				A1B57CCD1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv in Resources */,
 				A1B57CCB1E668BFA00F484E6 /* Temp Caddy - Caddies.csv in Resources */,
-				A1AFD42B1E7F12D400C28BC3 /* GoogleService-Info (1).plist in Resources */,
+				A1AFD42B1E7F12D400C28BC3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,12 +504,12 @@
 				A1DDEE4A1E6F3CAF004B1CC5 /* PerformanceHistoryViewController.swift in Sources */,
 				A1B57C9D1E668AD000F484E6 /* SecondViewController.swift in Sources */,
 				A1DDEE4C1E6F3D1B004B1CC5 /* AccountInformationViewController.swift in Sources */,
+				A19341681E806517003A3714 /* SignUpViewController.swift in Sources */,
 				A1DDEE4E1E6F3DE8004B1CC5 /* SignOutViewController.swift in Sources */,
 				A1B57C991E668AD000F484E6 /* AppDelegate.swift in Sources */,
 				A1B57CCF1E66930E00F484E6 /* ThirdViewController.swift in Sources */,
 				A14EF0E91E6E10D20022C86C /* LoginViewController.swift in Sources */,
 				A1B57C9B1E668AD000F484E6 /* FirstViewController.swift in Sources */,
-				A1AFD42E1E7F5B2000C28BC3 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
