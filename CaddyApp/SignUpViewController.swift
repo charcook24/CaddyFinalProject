@@ -17,6 +17,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var clubID: UITextField!
+    @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var titleText: UILabel!
     //
@@ -39,10 +40,13 @@ class SignUpViewController: UIViewController {
     }
    
     @IBAction func signUp(sender: AnyObject) {
-        if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
+        if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "", let nme = nameField.text where nme != "",  let clubNum = clubID.text where clubNum != "" {
             
             FIRAuth.auth()?.createUserWithEmail(self.emailField.text!, password: self.passwordField.text!, completion: { (user, error) in
+                
                 if error == nil{
+                    
+                    self.caddy()
                     
                     self.showLoginAlert("Successfully Created An Account", msg: "Please Sign In")
                     
@@ -50,7 +54,7 @@ class SignUpViewController: UIViewController {
             })
             
         } else {
-            showErrorAlert("Email and Password Required", msg: "Please enter an email and password")
+            showErrorAlert("All fields must be filled", msg: "Please fill in all of the fields shown")
             }
     }
     
@@ -67,10 +71,30 @@ class SignUpViewController: UIViewController {
             alert.addAction(action)
             presentViewController(alert, animated: true, completion: nil)
         }
+    
+    func caddy(){
+        let name = self.nameField.text
+        let rank = "rank"
+        let rating = 0
+        let clubID = self.clubID.text
+        let email = self.emailField.text
+        
+        let caddy : [String : AnyObject] = ["Name" : name!,
+                                            "rank" : rank,
+                                            "rating" : rating,
+                                            "clubID" : clubID!,
+                                            "email" : email!]
+        
+        let databaseRef = FIRDatabase.database().reference()
+        
+        databaseRef.child("Caddys").childByAutoId().setValue(caddy)
+        
+
+    }
 
     
 
-        
+    
     
     
     
