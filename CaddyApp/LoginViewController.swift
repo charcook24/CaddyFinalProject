@@ -19,9 +19,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var SignOut: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         if let user = FIRAuth.auth()?.currentUser
         {
@@ -58,6 +60,16 @@ class LoginViewController: UIViewController {
         
    
     }
+    
+    @IBAction func signOutPressed(sender: UIButton) {
+        try! FIRAuth.auth()?.signOut()
+        
+        self.emailField.text = ""
+        self.passwordField.text = ""
+        self.signUpButton.enabled = true
+    }
+    
+    
     func showPreviewAlert(title: String, msg: String) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
         let action = UIAlertAction(title: "OK", style: .Default, handler: nil)

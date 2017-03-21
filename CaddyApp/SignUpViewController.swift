@@ -32,6 +32,11 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func backToSignIn(sender: AnyObject) {
+        
+        performSegueWithIdentifier("backToSignIn", sender: nil)
+
+    }
    
     @IBAction func signUp(sender: AnyObject) {
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
@@ -39,22 +44,7 @@ class SignUpViewController: UIViewController {
             FIRAuth.auth()?.createUserWithEmail(self.emailField.text!, password: self.passwordField.text!, completion: { (user, error) in
                 if error == nil{
                     
-                    let name = "Name"
-                    let rank = "rank"
-                    let rating = "0"
-                    let golfCourse = "golfCourse"
-                    let email = self.emailField.text
-                    
-                    let caddy : [String : AnyObject] = ["Name" : name, "rank" : rank, "0" : rating, "golfCourse" : golfCourse, self.emailField.text! : email!]
-                    
-                    let databaseRef = FIRDatabase.database().reference()
-                    
-                    databaseRef.child("Caddys").childByAutoId().setValue(caddy)
-                    
-                    
-                    self.showLoginAlert("Successfully Created An Account", msg: "Please restart the application")
-                    
-             
+                    self.showLoginAlert("Successfully Created An Account", msg: "Please Sign In")
                     
                 }
             })
