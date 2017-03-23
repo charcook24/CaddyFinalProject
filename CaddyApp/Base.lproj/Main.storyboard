@@ -87,9 +87,55 @@
                             <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2017-03-07 at 9.17.39 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Rk1-XQ-bJg">
                                 <rect key="frame" x="0.0" y="78" width="600" height="473"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sb7-7O-gWk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sb7-7O-gWk">
                                 <rect key="frame" x="35" y="106" width="530" height="385"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="k9M-mm-MME" customClass="CustomCell" customModule="CaddyApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="530" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9M-mm-MME" id="2Bh-8X-MPp">
+                                            <rect key="frame" x="0.0" y="0.0" width="530" height="39"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeq-Jq-iiV">
+                                                    <rect key="frame" x="17" y="9" width="30" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Zcl-rd-9OH"/>
+                                                        <constraint firstAttribute="width" constant="30" id="n5L-LV-xfg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-rR-dgC">
+                                                    <rect key="frame" x="247" y="9" width="231" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="EMR-wZ-rXR"/>
+                                                        <constraint firstAttribute="width" constant="231" id="F43-d2-OeY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vNe-rR-dgC" firstAttribute="centerY" secondItem="2Bh-8X-MPp" secondAttribute="centerY" id="ByD-Pm-Cwx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vNe-rR-dgC" secondAttribute="trailing" constant="44" id="PaT-ce-pnp"/>
+                                                <constraint firstItem="qeq-Jq-iiV" firstAttribute="centerY" secondItem="2Bh-8X-MPp" secondAttribute="centerY" id="t1D-Mp-IU0"/>
+                                                <constraint firstItem="qeq-Jq-iiV" firstAttribute="leading" secondItem="2Bh-8X-MPp" secondAttribute="leadingMargin" constant="9" id="tHY-XH-Ct4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caddyName" destination="vNe-rR-dgC" id="2Zh-RB-5hK"/>
+                                            <outlet property="position" destination="qeq-Jq-iiV" id="se9-fy-7el"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="gKF-A7-BjH"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="3YF-ML-Qb3"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-qr-Ojb">
                                 <rect key="frame" x="244" y="503" width="113" height="38"/>
@@ -147,6 +193,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Unassigned " image="Bulleted List-50" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="unassignedView" destination="sb7-7O-gWk" id="HkS-c3-NTe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -684,7 +733,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Qfs-dh-h9D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Club ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEf-A5-VFW">
                                 <rect key="frame" x="221" y="362" width="158" height="30"/>

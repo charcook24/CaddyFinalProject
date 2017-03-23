@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		038BE661C47335B4A845E76D /* Pods_CaddyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEE07E306091644021322B1 /* Pods_CaddyApp.framework */; };
 		A14EF0E91E6E10D20022C86C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14EF0E81E6E10D20022C86C /* LoginViewController.swift */; };
+		A18426541E8433760003B2E3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18426531E8433760003B2E3 /* File.swift */; };
 		A19341681E806517003A3714 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19341671E806517003A3714 /* SignUpViewController.swift */; };
 		A1AFD42B1E7F12D400C28BC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1AFD42A1E7F12D300C28BC3 /* GoogleService-Info.plist */; };
 		A1B57C991E668AD000F484E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B57C981E668AD000F484E6 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		7AF6C4DC0CBD5B4ACD887802 /* Pods_CaddyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaddyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		899386E28F36E386EB80F6FC /* Pods-CaddyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaddyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaddyApp/Pods-CaddyApp.release.xcconfig"; sourceTree = "<group>"; };
 		A14EF0E81E6E10D20022C86C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A18426531E8433760003B2E3 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A19341671E806517003A3714 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A1AFD42A1E7F12D300C28BC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1B57C951E668AD000F484E6 /* CaddyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaddyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 		A13685181E68A4AA0025A94F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A18426531E8433760003B2E3 /* File.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				A1B57C991E668AD000F484E6 /* AppDelegate.swift in Sources */,
 				A1B57CCF1E66930E00F484E6 /* ThirdViewController.swift in Sources */,
 				A14EF0E91E6E10D20022C86C /* LoginViewController.swift in Sources */,
+				A18426541E8433760003B2E3 /* File.swift in Sources */,
 				A1B57C9B1E668AD000F484E6 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
