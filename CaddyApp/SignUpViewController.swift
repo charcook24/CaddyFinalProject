@@ -42,6 +42,7 @@ class SignUpViewController: UIViewController {
     @IBAction func signUp(sender: AnyObject) {
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "", let nme = nameField.text where nme != "",  let clubNum = clubID.text where clubNum != "" {
             
+            
             FIRAuth.auth()?.createUserWithEmail(self.emailField.text!, password: self.passwordField.text!, completion: { (user, error) in
                 
                 if error == nil{
@@ -50,6 +51,9 @@ class SignUpViewController: UIViewController {
                     
                     self.showLoginAlert("Successfully Created An Account", msg: "Please Sign In")
                     
+                }else{
+                    print("error")
+                
                 }
             })
             
