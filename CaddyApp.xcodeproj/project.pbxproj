@@ -121,6 +121,7 @@
 		A13685181E68A4AA0025A94F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A1842C471E8456E80003B2E3 /* CustomCell2.swift */,
 				A18426531E8433760003B2E3 /* File.swift */,
 			);
 			name = Model;
@@ -189,7 +190,6 @@
 			children = (
 				A14EF0E81E6E10D20022C86C /* LoginViewController.swift */,
 				A1B57C9A1E668AD000F484E6 /* FirstViewController.swift */,
-				A1842C471E8456E80003B2E3 /* CustomCell2.swift */,
 				A1B57C9C1E668AD000F484E6 /* SecondViewController.swift */,
 				A1B57CCE1E66930E00F484E6 /* ThirdViewController.swift */,
 				A1DDEE471E6F3C39004B1CC5 /* PaymentHistoryViewController.swift */,

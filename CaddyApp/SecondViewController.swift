@@ -11,10 +11,11 @@ import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
+let rootRef = FIRDatabase.database().reference()
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+    //names needs to pull from the unnassigned list
     var names = ["John Apple", "Mark Fancis", "John Smith", "Rocky Belboa", "Katie Ortell", "Susan Nomm", "Jerry Garcia"]
     
     var nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
@@ -47,9 +48,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-
+// needs to dd the current user to the unnasigned list
     @IBAction func checkInPressed(sender: AnyObject) {
         appendTable()
+        
+        
+        
         
     }
 
@@ -64,6 +68,7 @@ func appendTable() {
         NSIndexPath(forRow: self.names.count-1, inSection: 0)
         ], withRowAnimation: .Automatic)
     self.unassignedView.endUpdates()
+    
     
     
 }

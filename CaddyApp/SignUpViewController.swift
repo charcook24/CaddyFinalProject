@@ -13,7 +13,7 @@ import FirebaseAuth
 
 
 class SignUpViewController: UIViewController {
-    
+     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var clubID: UITextField!
@@ -48,6 +48,7 @@ class SignUpViewController: UIViewController {
                 if error == nil{
                     
                     self.caddy()
+                    self.caddyMaster()
                     
                     self.showLoginAlert("Successfully Created An Account", msg: "Please Sign In")
                     
@@ -77,6 +78,8 @@ class SignUpViewController: UIViewController {
         }
     
     func caddy(){
+        let id = FIRAuth.auth()?.currentUser?.uid
+        
         let name = self.nameField.text
         let rank = "rank"
         let rating = 0
@@ -88,14 +91,38 @@ class SignUpViewController: UIViewController {
                                             "rating" : rating,
                                             "clubID" : clubID!,
                                             "email" : email!]
+                                           
         
         let databaseRef = FIRDatabase.database().reference()
         
-        databaseRef.child("Caddys").childByAutoId().setValue(caddy)
+        databaseRef.child("Caddys").child(id!).setValue(caddy)
+        
+       
+        
+        
+        
+        
+        
+    
         
 
     }
+    func caddyMaster(){
+       
 
+        let name = self.nameField.text
+        let clubID = self.clubID.text
+        let email = self.emailField.text
+        
+        let caddyMaster : [String : AnyObject] = ["Name" : name!,
+                                            "clubID" : clubID!,
+                                            "email" : email!]
+        
+        let databaseRef = FIRDatabase.database().reference()
+        
+        databaseRef.child("CaddyMasters").childByAutoId().setValue(caddyMaster)
+
+    }
     
 
     

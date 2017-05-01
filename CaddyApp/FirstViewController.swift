@@ -10,11 +10,28 @@ import UIKit
 
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    // golfers needs to fetch the upcoming golfers list from firebase
     var golfers = ["Sally Preech", "Chaz Michael", "Jimbo", "John Apple", "Mark Fancis", "John Smith", "Rocky Belboa", "Katie Ortell", "Susan Nomm", "Jerry Garcia"]
+    
+    // caddys needs to fetch from unassigned and ordered the same as taken from unnasigned
     var caddys = ["Jenny Buck", "Jon Do", "Mr. Grinch", "Dr. Doolittle", "Sally Preech", "Chaz Michael", "Jimbo", "Katie Ortell", "Susan Nomm", "Jerry Garcia"]
+    var count = 2
    
     @IBOutlet var upcomingView: UITableView!
+    
+    func appendTable() {
+    
+        upcomingView.beginUpdates()
+        upcomingView.insertRowsAtIndexPaths([
+            NSIndexPath(forRow: count-1, inSection: 0)
+            ], withRowAnimation: .Automatic)
+        self.upcomingView.endUpdates()
+        count = count-1
+        
+        
+        
+    }
+
     
     
     
@@ -42,10 +59,10 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     
     
-    
+   // this needs to either remain 5 or get a count for the list of upcoming from firebase
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1;
+        return 5;
     }
 
     
