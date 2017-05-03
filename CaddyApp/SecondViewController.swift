@@ -22,7 +22,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet var unassignedView: UITableView!
     
-   
+    
     
     
     
@@ -47,11 +47,46 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return names.count
     }
     
+    @IBOutlet var CheckOut: UIButton!
+    @IBOutlet var Check: UIButton!
     
 // needs to dd the current user to the unnasigned list
+    
     @IBAction func checkInPressed(sender: AnyObject) {
+    
+        CheckOut.hidden = false
+        CheckOut.enabled = true
+        Check.hidden = true
+        Check.enabled = false
         appendTable()
         
+        
+                }
+    
+    
+    @IBAction func checkOutPressed(sender: AnyObject) {
+        Check.hidden = false
+        Check.enabled = true
+        CheckOut.hidden = true
+        CheckOut.enabled = false
+        remove()
+        
+    }
+        
+    
+        
+    func remove() {
+        var new = names.count
+        self.names.removeLast()
+        print(self.names)
+        unassignedView.beginUpdates()
+        unassignedView.deleteRowsAtIndexPaths([
+            NSIndexPath(forRow: self.names.count, inSection: 0)
+            ], withRowAnimation: .Automatic)
+        self.unassignedView.endUpdates()
+
+                
+       
         
         
         
@@ -61,8 +96,9 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 
 
-func appendTable() {
+    func appendTable() {
     self.names.append("Charles Cook")
+    print(self.names)
     unassignedView.beginUpdates()
     unassignedView.insertRowsAtIndexPaths([
         NSIndexPath(forRow: self.names.count-1, inSection: 0)
