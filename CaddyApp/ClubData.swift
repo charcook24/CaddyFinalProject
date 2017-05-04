@@ -7,5 +7,9 @@
 //
 
 import Foundation
+import Firebase
 
-
+class ClubData {
+   // statis let ds = Dataservice()
+    
+}

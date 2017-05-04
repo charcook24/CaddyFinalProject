@@ -11,7 +11,10 @@ import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
+let id = FIRAuth.auth()?.currentUser?.uid
 let rootRef = FIRDatabase.database().reference()
+
+
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,6 +24,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
     
     @IBOutlet var unassignedView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
     
     
     
@@ -84,19 +94,32 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             NSIndexPath(forRow: self.names.count, inSection: 0)
             ], withRowAnimation: .Automatic)
         self.unassignedView.endUpdates()
-
-                
-       
-        
-        
         
     }
-
     
+    func checkName(Name: String) -> Bool {
+        if names.contains(Name)
+        {
+        return true
+        }
+        else {
+            return false
+        }
+    }
+    
+    func removeName(Name: String) {
+        if let index = names.indexOf(Name) {
+            names.removeAtIndex(index)
+        }
+        
+
+    }
     
 
 
     func appendTable() {
+        
+            
     self.names.append("Charles Cook")
     print(self.names)
     unassignedView.beginUpdates()
@@ -104,6 +127,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         NSIndexPath(forRow: self.names.count-1, inSection: 0)
         ], withRowAnimation: .Automatic)
     self.unassignedView.endUpdates()
+       
     
     
     

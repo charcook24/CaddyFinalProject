@@ -81,7 +81,7 @@ class SignUpViewController: UIViewController {
         let id = FIRAuth.auth()?.currentUser?.uid
         
         let name = self.nameField.text
-        let rank = "rank"
+        let rank = "B"
         let rating = 0
         let clubID = self.clubID.text
         let email = self.emailField.text

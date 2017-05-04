@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		038BE661C47335B4A845E76D /* Pods_CaddyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEE07E306091644021322B1 /* Pods_CaddyApp.framework */; };
 		A1315BA91EBA463300C7F3A2 /* ClubData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1315BA81EBA463300C7F3A2 /* ClubData.swift */; };
+		A1315BAB1EBA780B00C7F3A2 /* CaddyMasterHubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1315BAA1EBA780B00C7F3A2 /* CaddyMasterHubVC.swift */; };
+		A1315BAD1EBA7C4D00C7F3A2 /* SetTeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1315BAC1EBA7C4D00C7F3A2 /* SetTeeVC.swift */; };
 		A14EF0E91E6E10D20022C86C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14EF0E81E6E10D20022C86C /* LoginViewController.swift */; };
 		A18426541E8433760003B2E3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18426531E8433760003B2E3 /* File.swift */; };
 		A1842C481E8456E90003B2E3 /* CustomCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1842C471E8456E80003B2E3 /* CustomCell2.swift */; };
@@ -54,6 +56,8 @@
 		7AF6C4DC0CBD5B4ACD887802 /* Pods_CaddyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaddyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		899386E28F36E386EB80F6FC /* Pods-CaddyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaddyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaddyApp/Pods-CaddyApp.release.xcconfig"; sourceTree = "<group>"; };
 		A1315BA81EBA463300C7F3A2 /* ClubData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubData.swift; sourceTree = "<group>"; };
+		A1315BAA1EBA780B00C7F3A2 /* CaddyMasterHubVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaddyMasterHubVC.swift; sourceTree = "<group>"; };
+		A1315BAC1EBA7C4D00C7F3A2 /* SetTeeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTeeVC.swift; sourceTree = "<group>"; };
 		A14EF0E81E6E10D20022C86C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A18426531E8433760003B2E3 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A1842C471E8456E80003B2E3 /* CustomCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell2.swift; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 				A1DDEE4B1E6F3D1B004B1CC5 /* AccountInformationViewController.swift */,
 				A1DDEE4D1E6F3DE8004B1CC5 /* SignOutViewController.swift */,
 				A19341671E806517003A3714 /* SignUpViewController.swift */,
+				A1315BAA1EBA780B00C7F3A2 /* CaddyMasterHubVC.swift */,
+				A1315BAC1EBA7C4D00C7F3A2 /* SetTeeVC.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -413,12 +419,14 @@
 				A1DDEE4A1E6F3CAF004B1CC5 /* PerformanceHistoryViewController.swift in Sources */,
 				A1B57C9D1E668AD000F484E6 /* SecondViewController.swift in Sources */,
 				A1DDEE4C1E6F3D1B004B1CC5 /* AccountInformationViewController.swift in Sources */,
+				A1315BAD1EBA7C4D00C7F3A2 /* SetTeeVC.swift in Sources */,
 				A19341681E806517003A3714 /* SignUpViewController.swift in Sources */,
 				A1DDEE4E1E6F3DE8004B1CC5 /* SignOutViewController.swift in Sources */,
 				A1B57C991E668AD000F484E6 /* AppDelegate.swift in Sources */,
 				A1315BA91EBA463300C7F3A2 /* ClubData.swift in Sources */,
 				A1B57CCF1E66930E00F484E6 /* ThirdViewController.swift in Sources */,
 				A14EF0E91E6E10D20022C86C /* LoginViewController.swift in Sources */,
+				A1315BAB1EBA780B00C7F3A2 /* CaddyMasterHubVC.swift in Sources */,
 				A1842C481E8456E90003B2E3 /* CustomCell2.swift in Sources */,
 				A18426541E8433760003B2E3 /* File.swift in Sources */,
 				A1B57C9B1E668AD000F484E6 /* FirstViewController.swift in Sources */,
