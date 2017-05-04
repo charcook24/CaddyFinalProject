@@ -50,8 +50,7 @@ class SetTeeVC: UIViewController {
     }
     
     @IBAction func SavePressed(sender: AnyObject) {
-        var view = SecondViewController()
-        view.removeName(Caddy1.text!)
+        
     
     }
     

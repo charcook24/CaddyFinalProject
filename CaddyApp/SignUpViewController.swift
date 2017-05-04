@@ -48,7 +48,7 @@ class SignUpViewController: UIViewController {
                 if error == nil{
                     
                     self.caddy()
-                    self.caddyMaster()
+                  
                     
                     self.showLoginAlert("Successfully Created An Account", msg: "Please Sign In")
                     
@@ -86,16 +86,17 @@ class SignUpViewController: UIViewController {
         let clubID = self.clubID.text
         let email = self.emailField.text
         
-        let caddy : [String : AnyObject] = ["Name" : name!,
+        let caddy1 : [String : AnyObject] = ["Name" : name!,
                                             "rank" : rank,
                                             "rating" : rating,
-                                            "clubID" : clubID!,
+                                            "loops/" : "value",
+                                            "ClubId" : clubID!,
                                             "email" : email!]
                                            
         
         let databaseRef = FIRDatabase.database().reference()
         
-        databaseRef.child("Caddys").child(id!).setValue(caddy)
+        databaseRef.child("users/Caddys").child(id!).setValue(caddy1)
         
        
         
@@ -107,22 +108,8 @@ class SignUpViewController: UIViewController {
         
 
     }
-    func caddyMaster(){
-       
+  
 
-        let name = self.nameField.text
-        let clubID = self.clubID.text
-        let email = self.emailField.text
-        
-        let caddyMaster : [String : AnyObject] = ["Name" : name!,
-                                            "clubID" : clubID!,
-                                            "email" : email!]
-        
-        let databaseRef = FIRDatabase.database().reference()
-        
-        databaseRef.child("CaddyMasters").childByAutoId().setValue(caddyMaster)
-
-    }
     
 
     

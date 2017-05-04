@@ -18,6 +18,8 @@ let rootRef = FIRDatabase.database().reference()
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+    
     //names needs to pull from the unnassigned list
     var names = ["John Apple", "Mark Fancis", "John Smith", "Rocky Belboa", "Katie Ortell", "Susan Nomm", "Jerry Garcia"]
     
@@ -28,8 +30,14 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
+        let databaseref = FIRDatabase.database().reference()
+        databaseref.child("users").child("Caddys").observeSingleEventOfType(.Value, withBlock: { FIRDataSnapshot in
+            let names2 = FIRDataSnapshot.value
+            print(names2)
+        
+        } )      // Do any additional setup after loading the view, typically from a nib.
     }
+    
 
     
     

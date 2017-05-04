@@ -1,5 +1,5 @@
 //
-//  ClubData.swift
+//  Data.swift
 //  CaddyApp
 //
 //  Created by Charles Cook on 5/3/17.
@@ -9,9 +9,8 @@
 import Foundation
 import Firebase
 
-class Dataservice {
-    static let ds = Dataservice()
-    
-    private var _Ref_Base = Firebase(url: )
-    
+let URL_BASE =  "https://caddyshack-67403.firebaseio.com/"
+
+class Data {
 }
+

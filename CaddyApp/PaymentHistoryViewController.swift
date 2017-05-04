@@ -35,6 +35,7 @@ class PaymentHistoryViewController: UIViewController {
             
             
         }
+        
         self.avgPay.text = "$156.56"
         self.loops.text = "16"
         self.totalPay.text = "$1,459"
