@@ -83,10 +83,10 @@ class SetTeeVC: UIViewController {
             let unassigned = SecondViewController()
         
         for var i = 0; i < Caddys.count; i++ {
-            print(unassigned.names)
+            print(names6)
             if unassigned.checkName(Caddys[i]!) == true {
                 unassigned.removeName(Caddys[i]!)
-                print(unassigned.names)
+                print(names6)
             }
             
         }

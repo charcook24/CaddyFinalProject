@@ -16,14 +16,17 @@ let rootRef = FIRDatabase.database().reference()
 
 
 
+public var names6 = ["John Apple", "Mark Fancis", "John Smith", "Rocky Belboa", "Katie Ortell", "Susan Nomm", "Jerry Garcia"]
+
+
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     
     //names needs to pull from the unnassigned list
-    var names = ["John Apple", "Mark Fancis", "John Smith", "Rocky Belboa", "Katie Ortell", "Susan Nomm", "Jerry Garcia"]
     
     var nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
+    var curName = ""
     
     @IBOutlet var unassignedView: UITableView!
     
@@ -35,7 +38,16 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let names2 = FIRDataSnapshot.value
             print(names2)
         
-        } )      // Do any additional setup after loading the view, typically from a nib.
+        } )
+        
+        databaseref.child("users").child("Caddys").child((FIRAuth.auth()!.currentUser!.uid)).child("Name").observeSingleEventOfType(.Value, withBlock: { FIRDataSnapshot in
+            let names2 = FIRDataSnapshot.value!
+            self.curName = names2.debugDescription
+            
+        }  )
+      
+        
+            // Do any additional setup after loading the view, typically from a nib.
     }
     
 
@@ -49,7 +61,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.unassignedView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomCell
         
-        cell.caddyName.text = self.names[indexPath.row]
+        cell.caddyName.text = names6[indexPath.row]
         cell.position.text = self.nums[indexPath.row]
         
         return cell
@@ -62,7 +74,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return names6.count
     }
     
     @IBOutlet var CheckOut: UIButton!
@@ -94,19 +106,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
         
     func remove() {
-        var new = names.count
-        self.names.removeLast()
-        print(self.names)
+        var new = names6.count
+        names6.removeLast()
+        print(names6)
         unassignedView.beginUpdates()
         unassignedView.deleteRowsAtIndexPaths([
-            NSIndexPath(forRow: self.names.count, inSection: 0)
+            NSIndexPath(forRow: names6.count, inSection: 0)
             ], withRowAnimation: .Automatic)
         self.unassignedView.endUpdates()
         
     }
     
     func checkName(Name: String) -> Bool {
-        if names.contains(Name)
+        if names6.contains(Name)
         {
         return true
         }
@@ -116,23 +128,25 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func removeName(Name: String) {
-        if let index = names.indexOf(Name) {
-            names.removeAtIndex(index)
+        if let index = names6.indexOf(Name) {
+            names6.removeAtIndex(index)
         }
         
 
     }
     
+    
+    
 
 
     func appendTable() {
+       
         
-            
-    self.names.append("Charles Cook")
-    print(self.names)
+    names6.append(self.curName)
+    print(names6)
     unassignedView.beginUpdates()
     unassignedView.insertRowsAtIndexPaths([
-        NSIndexPath(forRow: self.names.count-1, inSection: 0)
+        NSIndexPath(forRow: names6.count-1, inSection: 0)
         ], withRowAnimation: .Automatic)
     self.unassignedView.endUpdates()
        
