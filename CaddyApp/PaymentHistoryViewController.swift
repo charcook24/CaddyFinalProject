@@ -26,17 +26,29 @@ class PaymentHistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        var name1 = FIRAuth.auth()?.currentUser?.uid
+        print(name1!)
+            
+            
+            
+            
+        
+        
+        
+        let databaseref = FIRDatabase.database().reference()
+        databaseref.child("users").child("Caddys").child((FIRAuth.auth()!.currentUser!.uid)).child("Name").observeSingleEventOfType(.Value, withBlock: { FIRDataSnapshot in
+            let names2 = FIRDataSnapshot.value!
+            self.Name.text = names2.debugDescription
+            }  )
+        
+        // need to fetch data for pay history
+        
+
+        
     
         
-        if let user = FIRAuth.auth()?.currentUser
-        {
-            self.Name.text = user.email
-            
-            
-            
-        }
-        
-        self.avgPay.text = "$156.56"
+               self.avgPay.text = "$156.56"
         self.loops.text = "16"
         self.totalPay.text = "$1,459"
         self.wage.text = "$16.79/hr"
