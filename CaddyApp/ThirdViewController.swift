@@ -44,5 +44,9 @@ class ThirdViewController: UIViewController {
        // FIRAuth.auth()?.removeStateDidChangeListener(handle!)
     }
     
+    @IBAction func SignOut(sender: AnyObject) {
+         
+        
+    }
 
 }

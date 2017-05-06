@@ -21,7 +21,7 @@ class PaymentHistoryViewController: UIViewController {
     @IBOutlet var loops: UILabel!
     @IBOutlet var totalPay: UILabel!
     @IBOutlet var avgPay: UILabel!
-    @IBOutlet var wage: UILabel!
+    
     
     
     override func viewDidLoad() {
@@ -41,6 +41,8 @@ class PaymentHistoryViewController: UIViewController {
             let names2 = FIRDataSnapshot.value!
             self.Name.text = names2.debugDescription
             }  )
+        var num = databaseref.child("users").child("Caddys").child((FIRAuth.auth()!.currentUser!.uid)).child("loops").queryOrderedByKey()
+        print(num)
         
         // need to fetch data for pay history
         
@@ -49,9 +51,9 @@ class PaymentHistoryViewController: UIViewController {
     
         
                self.avgPay.text = "$156.56"
-        self.loops.text = "16"
-        self.totalPay.text = "$1,459"
-        self.wage.text = "$16.79/hr"
+        self.loops.text = "5"
+        self.totalPay.text = "$859"
+        
         
         
         

@@ -89,7 +89,7 @@ class SignUpViewController: UIViewController {
         let caddy1 : [String : AnyObject] = ["Name" : name!,
                                             "rank" : rank,
                                             "rating" : rating,
-                                            "loops/" : "value",
+                                            "loops" : "value",
                                             "ClubId" : clubID!,
                                             "email" : email!]
                                            

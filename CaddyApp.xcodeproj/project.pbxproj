@@ -28,6 +28,8 @@
 		A1B57CCB1E668BFA00F484E6 /* Temp Caddy - Caddies.csv in Resources */ = {isa = PBXBuildFile; fileRef = A1B57CCA1E668BFA00F484E6 /* Temp Caddy - Caddies.csv */; };
 		A1B57CCD1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv in Resources */ = {isa = PBXBuildFile; fileRef = A1B57CCC1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv */; };
 		A1B57CCF1E66930E00F484E6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B57CCE1E66930E00F484E6 /* ThirdViewController.swift */; };
+		A1CEDC931EBB850900DF3DB3 /* EditUnassignedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDC921EBB850900DF3DB3 /* EditUnassignedView.swift */; };
+		A1CEDC951EBB89F800DF3DB3 /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDC941EBB89F800DF3DB3 /* EditUserView.swift */; };
 		A1DDEE481E6F3C39004B1CC5 /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DDEE471E6F3C39004B1CC5 /* PaymentHistoryViewController.swift */; };
 		A1DDEE4A1E6F3CAF004B1CC5 /* PerformanceHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DDEE491E6F3CAF004B1CC5 /* PerformanceHistoryViewController.swift */; };
 		A1DDEE4C1E6F3D1B004B1CC5 /* AccountInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DDEE4B1E6F3D1B004B1CC5 /* AccountInformationViewController.swift */; };
@@ -81,6 +83,8 @@
 		A1B57CCA1E668BFA00F484E6 /* Temp Caddy - Caddies.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Temp Caddy - Caddies.csv"; sourceTree = "<group>"; };
 		A1B57CCC1E668C0100F484E6 /* Temp Caddy - Caddie Masters.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Temp Caddy - Caddie Masters.csv"; sourceTree = "<group>"; };
 		A1B57CCE1E66930E00F484E6 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		A1CEDC921EBB850900DF3DB3 /* EditUnassignedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUnassignedView.swift; sourceTree = "<group>"; };
+		A1CEDC941EBB89F800DF3DB3 /* EditUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
 		A1DDEE471E6F3C39004B1CC5 /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
 		A1DDEE491E6F3CAF004B1CC5 /* PerformanceHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceHistoryViewController.swift; sourceTree = "<group>"; };
 		A1DDEE4B1E6F3D1B004B1CC5 /* AccountInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInformationViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 				A19341671E806517003A3714 /* SignUpViewController.swift */,
 				A1315BAA1EBA780B00C7F3A2 /* CaddyMasterHubVC.swift */,
 				A1315BAC1EBA7C4D00C7F3A2 /* SetTeeVC.swift */,
+				A1CEDC921EBB850900DF3DB3 /* EditUnassignedView.swift */,
+				A1CEDC941EBB89F800DF3DB3 /* EditUserView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -418,8 +424,10 @@
 				A1DDEE481E6F3C39004B1CC5 /* PaymentHistoryViewController.swift in Sources */,
 				A1315BB31EBAD91F00C7F3A2 /* Data.swift in Sources */,
 				A1DDEE4A1E6F3CAF004B1CC5 /* PerformanceHistoryViewController.swift in Sources */,
+				A1CEDC951EBB89F800DF3DB3 /* EditUserView.swift in Sources */,
 				A1B57C9D1E668AD000F484E6 /* SecondViewController.swift in Sources */,
 				A1DDEE4C1E6F3D1B004B1CC5 /* AccountInformationViewController.swift in Sources */,
+				A1CEDC931EBB850900DF3DB3 /* EditUnassignedView.swift in Sources */,
 				A1315BAD1EBA7C4D00C7F3A2 /* SetTeeVC.swift in Sources */,
 				A19341681E806517003A3714 /* SignUpViewController.swift in Sources */,
 				A1DDEE4E1E6F3DE8004B1CC5 /* SignOutViewController.swift in Sources */,

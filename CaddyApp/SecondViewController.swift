@@ -50,6 +50,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             // Do any additional setup after loading the view, typically from a nib.
     }
     
+    
 
     
     
@@ -135,6 +136,10 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     }
     
+    func addName(Name: String, Pos: Int) {
+        names6.insert(Name, atIndex: Pos - 1)
+    }
+    
     
     
 
@@ -154,6 +159,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
 }
+    
+    
     
     
 }
